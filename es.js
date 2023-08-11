@@ -30,124 +30,137 @@ console.log(richCountry);
 */
 
 
-//Rest Parameter (...name). rest parameter can take all the value provive into the function
-
-/*
-function calculation(a,b,...numbers){
-  let sum=0;
-  for(let i of numbers){
-    sum+=i;
-  }
-  console.log(sum);
-  console.log(a+b);
-
-}
-calculation(10,20,1,2,3,4,5);
-*/
+// /**
+//  * //Rest Parameter (...name). rest parameter can take all the value provive into the function
+//  */
 
 
 
-//Dynamic Function (Function by using the function constructor)
+// function calculation(a,b,...numbers){
+//   let sum=0;
+//   for(let i of numbers){
+//     sum+=i;
+//   }
+//   console.log(sum);
+//   console.log(a+b);
 
-/*
-let nam=function name(value){
-    return value;
-}
-console.log(nam("Mehedi hasan Rakib"));
-*/
+// }
+// calculation(10,20,1,2,3,4,5);
 
 
-//variable Hoisting
-//before value asigning
+
+//  
+
+ /*
+// variable Hoisting
+// before value asigning
 // after variable type declaring
+ */
 
- /*
- nam ="Rakib"
- console.log(nam);
- var nam;
+//  nam ="Rakib"
+//  console.log(nam);
+//  var nam;
+
+
+
+/**
+ *  // For of Loop
  */
 
 
- // For of Loop
-
-
- /*
- let city=['Dhaka','cumilla','chandput','chittagang'];
- for(let cityname of city){
-    console.log(cityname);
- }
- */
-
-
-
- //Object 
-
-  
-  
-  /*
-  let CoU={dept:'yes',student:'yes',Big:true,Vc:'Yes'}
  
- let CoUpro={
-   study:'well',
-   extracarriculam:'Yes',
-   student:{
-    goodstudent:true,
-    badstudent:false,
-    studeyenvironment:'yes'
-   },
-   teacher:{
-    number:'not so good',
-    quantity:'poor',
-    quality:'so so',
-    wellmanner:'depends'
+//  let city=['Dhaka','cumilla','chandput','chittagang'];
+//  for(let cityname of city){
+//     console.log(cityname);
+//  }
+ 
 
-   }
- }
- console.log(CoU['dept']);
- console.log(CoUpro['student'])
- console.log(CoUpro['teacher']['quantity']);
-for(let elmnt in CoUpro){
+
+
+/**
+ *  //Object 
+ */
+
+  
+  
+  
+//    let CoU={dept:'yes',student:'yes',Big:true,Vc:'Yes'}
+ 
+//  let CoUpro={
+//    study:'well',
+//    extracarriculam:'Yes',
+//    student:{
+//     goodstudent:true,
+//     badstudent:false,
+//     studeyenvironment:'yes'
+//    },
+//    teacher:{
+//     number:'not so good',
+//     quantity:'poor',
+//     quality:'so so',
+//     wellmanner:'depends'
+
+//    },
+//    dept:{
+//     quantity:'19',
+//     royaldept:'ICT'
+
+//    }
+//  }
+//   // console.log(CoU['dept']);
+//     // console.log(CoUpro['student'])
+//   // console.log(CoUpro['teacher']['quantity']);
+// // for(let elmnt in CoUpro){
     
-    console.log(elmnt+": "+CoU[elmnt])
-}
-console.log("next step");
-if(CoU['dept']=="no"){
-    console.log("wrong");
-}
-else if(CoU['dept']=='yes'){
-    console.log("you are right");
-}
-*/ 
+// //     console.log(elmnt+": "+CoU[elmnt])
+// // }
+// // console.log("next step");
+// if(CoU['dept']=="no"){
+//     console.log("wrong");
+// }
+// else if(CoU['dept']=='yes'){
+//     console.log("you are right");
+// }
 
 
-//Annonymous function
 
-/*
+ 
+/**
+ * //Annonymous function
+ * 
 1) A function without name
 2) you can reasign it.
 */
+
 //  var fun=function(){
 //   return 'hello';
 //  }
 //  console.log(fun());
 
 
- /*
- var fun=function(...x){
-  return x;
- }
- let ara=[1,2,3,4,5,6,7,8]
-// reasining this function
- var fun=function()
- {
-  return 'hello';
- }
- //console.log(fun(ara));
- console.log(fun());
+ 
+//  var fun=function(x){
+//   return x;
+//  }
+//  let ara=[1,2,3,4,5,6,7,8]
+
+//  //console.log(fun(ara));
+
+
+// // reasining this function
+
+// var fun=function()
+//  {
+//   return 'hello';
+//  }
+
+//  console.log(fun());
+ 
+
+
+/**
+ *  //Arrow function
  */
-
-
- //Arrow function
 
 //  let arow=(...x)=>{
 //   console.log(x);
@@ -183,13 +196,15 @@ else if(CoU['dept']=='yes'){
     //   let bangladesh=['Dhaka','khulna','cumilla','Chittagong'];
     //   let India=['Mumbai','Kolkata','chennai','Haydrabad'];
     //   let china=['uhan','hongkong','shanghai','beijing'];
-    //   let concat=[bangladesh,India,china];
-    //   // let res=[...bangladesh,...India,...china];
-    //   console.log(concat[0][2]);
-    //   //console.log(res[1][0]);
-    //  // console.log(res[5]);
+    //   // let concat=[bangladesh,India,china];
+    //   let res=[...bangladesh,...India,...china];
+    //   // console.log(concat[0][2]);
+    //   console.log(res);
+    //  // console.log(res[1][0]);
+    //  console.log(res[5]);
 
     // we can also do this in this way
+
     // let countries = [
     //   ['Dhaka', 'khulna', 'cumilla', 'Chittagong'],  // Bangladesh
     //   ['Mumbai', 'Kolkata', 'chennai', 'Haydrabad'], // India
@@ -206,8 +221,11 @@ else if(CoU['dept']=='yes'){
     //  console.log(a);
     //  let[c , , ,b]=bangladesh;
     //  console.log(c);
+    //  let[m,n,o,]=bangladesh;
+    //  console.log(o);
 
     //another example
+
     // const matrix = [
     //   [1, 2, 3],
     //   [4, 5, 6],
@@ -221,6 +239,7 @@ else if(CoU['dept']=='yes'){
     // console.log(el2); // Output: 2
     // console.log(el3); // Output: 3
     // console.log(row2[2]);
+    // console.log(row1);
 
 
 
@@ -233,27 +252,30 @@ else if(CoU['dept']=='yes'){
     // myMap.set('key2',"india");
     // myMap.set('key3',"pakistan");
     // myMap.set('key4',"nepal");
+    // myMap.set('key6',"America");
     // myMap.set('key5',"saudi arabia");
+   
+    
     // console.log(myMap.keys());
     // console.log(myMap.values());
-    // // for(let mykey of myMap.keys()){
-    // //   console.log(mykey);
-    // // }
+    // for(let mykey of myMap.keys()){
+    //   console.log(mykey);
+    // }
       
-    
-    // //Delete method
-    // // myMap.delete('key1');
+     
+    // // //Delete method
+    // // // myMap.delete('key1');
 
     
     
-    // // //clear method
-    // // myMap.clear();
+    // // // //clear method
+    // // // myMap.clear();
 
 
-    // // for(let myvalue of myMap.values()){
-    // //   console.log(myvalue);
-    // // }
-    // // console.log(myMap.get('key5'));
+    // for(let myvalue of myMap.values()){
+    //   console.log(myvalue);
+    // }
+    // console.log(myMap.get('key5'));
 
 
 
@@ -307,7 +329,10 @@ else if(CoU['dept']=='yes'){
     //     console.log("doesnt exist")
     //   }
 
-    //   //values method
+    /**
+     *  //   //values method
+     */
+
 
     //   console.log(myset.values());
 
@@ -371,14 +396,14 @@ else if(CoU['dept']=='yes'){
       3)
       */
 
-      // class newclass{
-      //   // this way we should define constructor
-      //   constructor(){
+      class newclass{
+        // this way we should define constructor
+        constructor(){
 
-      //     console.log("hello ,i am constructor");
-      //   }
-      // }
-      // new newclass;
+          console.log("hello ,i am constructor");
+        }
+      }
+      new newclass;
 
       // // parameterized constructor
 
@@ -442,30 +467,30 @@ else if(CoU['dept']=='yes'){
     // obj.fun1();
 
 
-    /**
-     * Super keyword
-     *
-     *1) Called a method form paren class to child class
-     */
+    // /**
+    //  * Super keyword
+    //  *
+    //  *1) Called a method form paren class to child class
+    //  */
 
-     class parents{
-      fun1(){
-        console.log("Hello word");
-      }
-      fun2(){
-        console.log("This is the second function");
-      }
+    //  class parents{
+    //   fun1(){
+    //     console.log("Hello word");
+    //   }
+    //   fun2(){
+    //     console.log("This is the second function");
+    //   }
 
-     }
+    //  }
 
-     class child extends parents{
-      demo(){
-        super.fun1();
-        super.fun2();
-      }
-     }
-     let obj=new child;
-     obj.demo();
+    //  class child extends parents{
+    //   demo(){
+    //     super.fun1();
+    //     super.fun2();
+    //   }
+    //  }
+    //  let obj=new child;
+    //  obj.demo();
       
 
       
